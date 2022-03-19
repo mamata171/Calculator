@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <input type="text" placeholder="0" id="o-s">
+                <button onclick="clr()">cl</button>
+                <button onclick="del()">del</button>
+
+                <button onclick="display('%')">%</button>
+                <button onclick="display('*')">*</button>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('/')">/</button>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('-')">-</button>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('+')">+</button>
+                <button onclick="display('0')">0</button>
+                <button onclick="display('.')">.</button>
+                <button onclick="calculate()" class="equalto">=</button>
+            </div>
+        </div>
+   
+
+    <script>
+        let os = document.getElementById("o-s")
+        
+        function display(num){
+            os.value+=num;
+
+        }
+
+        function calculate(){
+            try{
+                os.value = eval(os.value)
+            }
+            catch(err){
+                os.value = "Invalid"
+
+            }
+
+        }
+
+        function del(){
+            os.value = os.value.slice(0,-1);
+        }
+
+        function clr(){
+        os.value = "";
+           
+        }
+
+      
+    </script>
+
+    </body>
+</html>

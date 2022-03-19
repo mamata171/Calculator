@@ -11,7 +11,7 @@
 .container{
     margin-top: 50px;
     margin-bottom: 20px;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +34,8 @@
 
 input{
     grid-column: span 4;
-    height: 70px;
-    width: 260px;
+    height: 80px;
+    width: 270px;
     background-color: #ecf0f3;
     border: none;
     box-shadow: inset -5px -5px 12px #ffffff,
@@ -51,8 +51,8 @@ input{
 }
 
 button{
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
     background-color: #ecf0f3;
     box-shadow: -5px -5px 12px white,
                 5px 5px 12px rgba(0,0,0,0.16) ;
